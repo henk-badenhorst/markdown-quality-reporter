@@ -1,0 +1,15 @@
+{
+  "name": "markdown-quality-reporter",
+  "version": "1.0.0",
+  "description": "report on the quality of markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reporter",
+    "markdown"
+  ],
+  "author": "Henk Badenhorst",
+  "license": "ISC"
+}
