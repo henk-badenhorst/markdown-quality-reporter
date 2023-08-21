@@ -1,15 +1,29 @@
 {
-  "name": "markdown-quality-reporter",
+  "name": "markdown-link-reporter",
   "version": "1.0.0",
-  "description": "report on the quality of markdown files",
+  "description": "report on the status of links in markdown files",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier . --write",
+    "format-check": "prettier . --check",
+    "build": "tsc"
   },
   "keywords": [
     "reporter",
     "markdown"
   ],
   "author": "Henk Badenhorst",
-  "license": "ISC"
+  "type": "module",
+  "license": "ISC",
+  "bin": {
+    "markdown-reporter": "./dist/index.js"
+  },
+  "dependencies": {
+    "@types/node": "^20.5.1",
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "fast-glob": "^3.3.1",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  }
 }
